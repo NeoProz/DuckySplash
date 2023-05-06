@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+{% block css %}
+<link href={{ url_for('static', filename='css/home.css') }} rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+<main>
+  <div id="game"></div>
+   <p class="music-credit">Thanks to Vicetone, Finland DJ, and Tony Igy for the song: "Astronomia"</p>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1/lib/addons/p5.sound.min.js"></script>
+<script src={{ url_for('static', filename='js/home.js') }}></script>
+{% endblock %}

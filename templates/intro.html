@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome{% endblock %}
+{% block css %}
+<link href={{ url_for('static', filename='css/intro.css') }} rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block content %}
+<h1>WELCOME TO DUCKY SPLASH</h1>
+<span class="credits">Made by <a href="https://replit.com/@PyGrammer5" target="_blank">PyGrammer5</a>, <a href="https://replit.com/@NeoProz" target="_blank">NeoProz</a>, and <a href="https://replit.com/@sparik7633" target="_blank">sparik7633</a></span>
+<div class="info">
+  <p class="backstory">Freddy accidentally fell into a stream and is trying to stay alive. Help him eat fish and keep swimming but don't tire him out or he might be swept off the screen...<br><br>As Freddy starves and runs out of energy, you will have less and less control over him.<br><br>Use the left and right arrow keys to control Freddy, and use the down arrow to grab fish.</p>
+  <img class="freddy-running" src={{ url_for('static', filename='assets/freddy-animation.gif') }} alt="freddy running">
+  <div class="dummy"></div>
+</div>
+
+<br><br>
+
+<a href={{ url_for('game') }}><button>Click here to play Ducky Splash. Turn up your sound!</button></a>
+
+{% endblock %}

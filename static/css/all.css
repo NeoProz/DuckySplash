@@ -1,0 +1,20 @@
+* {
+  font-family: arial, sans-serif;
+}
+
+body {
+  padding: 2rem;
+}
+
+a, p {
+  font-size: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dummy {
+  display: block;
+  clear: both;
+}

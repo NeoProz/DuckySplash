@@ -1,0 +1,16 @@
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.music-credit {
+  font-size: 1rem;
+}
+
+canvas {
+  border-radius: 1rem;
+  border: 5px solid black;
+  box-shadow: 0 0 0.4rem #424242;
+}
